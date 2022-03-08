@@ -12,11 +12,11 @@ var mymap = L.map('map', {
 
 
 function getColor(value) {
-    return value > 139 ? '#54278f':
-           value > 87  ? '#756bb1':
-           value > 53  ? '#9e9ac8':
-           value > 32  ? '#cbc9e2':
-                         '#f2f0f7';
+    return value > 139 ? '#a63603':
+           value > 87  ? '#e6550d':
+           value > 53  ? '#fd8d3c':
+           value > 32  ? '#fdbe85':
+                         '#feedde';
 }
 
 function style(feature){
@@ -24,7 +24,7 @@ function style(feature){
         fillColor: getColor(feature.properties.pop_den),   // pop_den is the field name for the population density data
         weight: 2,
         opacity: 1,
-        color: 'gray',
+        color: '#2e2e2e',
         fillOpacity: 0.9
     };
     }
