@@ -6,6 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>ESC/GEO 455 (SP22) DEMO</title><!--change to your name -->
         <meta name="description" content="An interactive getting started guide">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
         <!-- change / playaround with different css elements to customize and build your own webpage-->
         <style>
             #container {
@@ -25,6 +29,10 @@
                 border: 5px solid grey;
                 border-radius: 5px;
                 text-align: center;
+                background-image: url(bluff.jfif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
                 }
             
             #container #main {
@@ -40,6 +48,7 @@
                 background-color: #bab8b8;
                 border: 1px solid black;
                 border-radius:15px;
+                
                 }
 
             #container #leftsidebar {
@@ -90,6 +99,14 @@
                 margin: 4px;
                 padding: 2px;
             }
+            
+            #container #map {
+               position: absolute;
+                left: 300px; 
+                top: 500px; 
+                width: 400px; 
+                height: 400px; 
+            }
         </style>
     </head>
     <body>
@@ -123,6 +140,9 @@
                  <ul  id="menulist">
                     <li class="menuitem"><a href="ex_1/final_project.html">Final Project</a></li>
                 </ul>
+                <p> </p>
+                <img src="gis.jpg" align= "center" width="200" height="75">
+                <p></p>
             </div>
             <div id="rightsidebar">
                 <p> </p>
@@ -132,12 +152,30 @@
                 <h4><em>Alex Baker</em></h4>
                <a href="mailto:baker2181@uwlax.edu">baker2181@uwlax.edu</a>
             </div>
-            <div id="main"> 
+            <div id="main">
                     <h3>About me</h3>
                     <p>
                         My name is Alex Baker and I am a fifth year college student at the University of Wisconsin - La Crosse. I am majoring in Geography with a concentration in GIS. When I am not doing school work I enoy golfing with my friends.
                     </p>
-           </div>
+                <h3>Joke</h3>
+                    <p>What do you call an alligator detective?</p>
+                    <button id="myBtn4">Joke</button>
+                    <p id="demo4"></p>
+    <script>
+        document.getElementById("myBtn4").addEventListener("click", hello);
+
+        function hello() {
+            document.getElementById("demo4").innerHTML = 
+                "An investi-gator!";
+                }
+        function mySecondFunction() {
+            document.getElementById("demo3").innerHTML += "Clicked!<br>";
+        }
+    </script>
+                    <h3>This is my hometown.</h3>
+            </div>
+            <div id=map></div>
         </div>
+        <script src="map_html_thing.js"></script>
     </body>
 </html>
