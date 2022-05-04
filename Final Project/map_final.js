@@ -61,6 +61,156 @@ var bluejaysPopup = "Rogers Centre<br/>Team: Toronto Blue Jays<br/>Opening Year:
 
 var customOptions ={'maxWidth': '150','className' : 'custom'};
 
+var myIcon1 = L.icon({
+    iconUrl: 'images/angels.png',
+    iconSize: [30, 30],
+});
+
+var myIcon2 = L.icon({
+    iconUrl: 'images/dbacks.png',
+    iconSize: [30, 30],
+});
+
+var myIcon3 = L.icon({
+    iconUrl: 'images/braves.png',
+    iconSize: [30, 30],
+});
+
+var myIcon4 = L.icon({
+    iconUrl: 'images/orioles.png',
+    iconSize: [30, 30],
+});
+
+var myIcon5 = L.icon({
+    iconUrl: 'images/redsox.png',
+    iconSize: [30, 30],
+});
+
+var myIcon6 = L.icon({
+    iconUrl: 'images/cubs.png',
+    iconSize: [30, 30],
+});
+
+var myIcon7 = L.icon({
+    iconUrl: 'images/whitesox.png',
+    iconSize: [30, 30],
+});
+
+var myIcon8 = L.icon({
+    iconUrl: 'images/reds.png',
+    iconSize: [30, 30],
+});
+
+var myIcon9 = L.icon({
+    iconUrl: 'images/guardians.png',
+    iconSize: [30, 30],
+});
+
+var myIcon10 = L.icon({
+    iconUrl: 'images/rockies.png',
+    iconSize: [30, 30],
+});
+
+var myIcon11 = L.icon({
+    iconUrl: 'images/tigers.png',
+    iconSize: [30, 30],
+});
+
+var myIcon12 = L.icon({
+    iconUrl: 'images/marlins.png',
+    iconSize: [30, 30],
+});
+
+var myIcon13 = L.icon({
+    iconUrl: 'images/astros.png',
+    iconSize: [30, 30],
+});
+
+var myIcon14 = L.icon({
+    iconUrl: 'images/royals.png',
+    iconSize: [30, 30],
+});
+
+var myIcon15 = L.icon({
+    iconUrl: 'images/dodgers.png',
+    iconSize: [30, 30],
+});
+
+var myIcon16 = L.icon({
+    iconUrl: 'images/brewers.png',
+    iconSize: [30, 30],
+});
+
+var myIcon17 = L.icon({
+    iconUrl: 'images/twins.png',
+    iconSize: [30, 30],
+});
+
+var myIcon18 = L.icon({
+    iconUrl: 'images/nationals.png',
+    iconSize: [30, 30],
+});
+
+var myIcon19 = L.icon({
+    iconUrl: 'images/mets.png',
+    iconSize: [30, 30],
+});
+
+var myIcon20 = L.icon({
+    iconUrl: 'images/yankees.png',
+    iconSize: [30, 30],
+});
+
+var myIcon21 = L.icon({
+    iconUrl: 'images/as.png',
+    iconSize: [30, 30],
+});
+
+var myIcon22 = L.icon({
+    iconUrl: 'images/phillies.png',
+    iconSize: [30, 30],
+});
+
+var myIcon23 = L.icon({
+    iconUrl: 'images/pirates.png',
+    iconSize: [30, 30],
+});
+
+var myIcon24 = L.icon({
+    iconUrl: 'images/padres.png',
+    iconSize: [30, 30],
+});
+
+var myIcon25 = L.icon({
+    iconUrl: 'images/giants.png',
+    iconSize: [30, 30],
+});
+
+var myIcon26 = L.icon({
+    iconUrl: 'images/mariners.png',
+    iconSize: [30, 30],
+});
+
+var myIcon27 = L.icon({
+    iconUrl: 'images/cardinals.png',
+    iconSize: [30, 30],
+});
+
+var myIcon28 = L.icon({
+    iconUrl: 'images/rays.png',
+    iconSize: [30, 30],
+});
+
+var myIcon29 = L.icon({
+    iconUrl: 'images/rangers.png',
+    iconSize: [30, 30],
+});
+
+var myIcon30 = L.icon({
+    iconUrl: 'images/bluejays.png',
+    iconSize: [30, 30],
+});
+
 // Set up landmark variables and individual landmarks
 coords = [
     [41.948438, -87.655333],
@@ -84,71 +234,101 @@ coords = [
 
 var stadiums = L.layerGroup();
 
-var angels = L.marker([33.800308, -117.882732]).bindPopup(angelsPopup, customOptions).addTo(stadiums);
-var dbacks = L.marker([33.445526, -112.066664]).bindPopup(dbacksPopup, customOptions).addTo(stadiums);
-var braves = L.marker([33.8907, -84.467684]).bindPopup(bravesPopup, customOptions).addTo(stadiums);
-var orioles = L.marker([39.284052, -76.621512]).bindPopup(oriolesPopup, customOptions).addTo(stadiums);
-var redsox = L.marker([42.346676, -71.097218]).bindPopup(redsoxPopup, customOptions).addTo(stadiums);
-var cubs = L.marker([41.948438, -87.655333]).bindPopup(cubsPopup, customOptions).addTo(stadiums);
-var whitesox = L.marker([41.8299023, -87.633752]).bindPopup(whitesoxPopup, customOptions).addTo(stadiums);
-var reds = L.marker([39.097931, -84.508151]).bindPopup(redsPopup, customOptions).addTo(stadiums);
-var guardians = L.marker([41.496211, -81.685229]).bindPopup(guardiansPopup, customOptions).addTo(stadiums);
-var rockies = L.marker([39.755882, -104.994178]).bindPopup(rockiesPopup, customOptions).addTo(stadiums);
-var tigers = L.marker([42.338998, -83.04852]).bindPopup(tigersPopup, customOptions).addTo(stadiums);
-var marlins = L.marker([25.778318, -80.219597]).bindPopup(marlinsPopup, customOptions).addTo(stadiums);
-var astros = L.marker([29.757697, -95.354538]).bindPopup(astrosPopup, customOptions).addTo(stadiums);
-var royals = L.marker([39.051672, -94.480314]).bindPopup(royalsPopup, customOptions).addTo(stadiums);
-var dodgers = L.marker([34.073851, -118.239958]).bindPopup(dodgersPopup, customOptions).addTo(stadiums);
-var brewers = L.marker([43.027978, -87.97115]).bindPopup(brewersPopup, customOptions).addTo(stadiums);
-var twins = L.marker([44.981712, -93.27776]).bindPopup(twinsPopup, customOptions).addTo(stadiums);
-var nationals = L.marker([38.87301, -77.007433]).bindPopup(nationalsPopup, customOptions).addTo(stadiums);
-var mets = L.marker([40.757088, -73.845821]).bindPopup(metsPopup, customOptions).addTo(stadiums);
-var yankees = L.marker([40.829643, -73.926175]).bindPopup(yankeesPopup, customOptions).addTo(stadiums);
-var as = L.marker([37.752483, -122.19821]).bindPopup(asPopup, customOptions).addTo(stadiums);
-var phillies = L.marker([39.906057, -75.166495]).bindPopup(philliesPopup, customOptions).addTo(stadiums);
-var pirates = L.marker([40.446855, -80.005666]).bindPopup(piratesPopup, customOptions).addTo(stadiums);
-var padres = L.marker([32.707656, -117.156904]).bindPopup(padresPopup, customOptions).addTo(stadiums);
-var giants = L.marker([37.778595, -122.38927]).bindPopup(giantsPopup, customOptions).addTo(stadiums);
-var mariners = L.marker([47.591391, -122.332327]).bindPopup(marinersPopup, customOptions).addTo(stadiums);
-var cardinals = L.marker([38.622619, -90.192821]).bindPopup(cardinalsPopup, customOptions).addTo(stadiums);
-var rays = L.marker([27.768225, -82.653392]).bindPopup(raysPopup, customOptions).addTo(stadiums);
-var rangers = L.marker([32.75128, -97.082504]).bindPopup(rangersPopup, customOptions).addTo(stadiums);
-var bluejays = L.marker([43.641438, -79.389353]).bindPopup(bluejaysPopup, customOptions).addTo(stadiums);
+var angels = L.marker([33.800308, -117.882732], {icon: myIcon1}).bindPopup(angelsPopup, customOptions).addTo(stadiums);
+var dbacks = L.marker([33.445526, -112.066664], {icon: myIcon2}).bindPopup(dbacksPopup, customOptions).addTo(stadiums);
+var braves = L.marker([33.8907, -84.467684], {icon: myIcon3}).bindPopup(bravesPopup, customOptions).addTo(stadiums);
+var orioles = L.marker([39.284052, -76.621512], {icon: myIcon4}).bindPopup(oriolesPopup, customOptions).addTo(stadiums);
+var redsox = L.marker([42.346676, -71.097218], {icon: myIcon5}).bindPopup(redsoxPopup, customOptions).addTo(stadiums);
+var cubs = L.marker([41.948438, -87.655333], {icon: myIcon6}).bindPopup(cubsPopup, customOptions).addTo(stadiums);
+var whitesox = L.marker([41.8299023, -87.633752], {icon: myIcon7}).bindPopup(whitesoxPopup, customOptions).addTo(stadiums);
+var reds = L.marker([39.097931, -84.508151], {icon: myIcon8}).bindPopup(redsPopup, customOptions).addTo(stadiums);
+var guardians = L.marker([41.496211, -81.685229], {icon: myIcon9}).bindPopup(guardiansPopup, customOptions).addTo(stadiums);
+var rockies = L.marker([39.755882, -104.994178], {icon: myIcon10}).bindPopup(rockiesPopup, customOptions).addTo(stadiums);
+var tigers = L.marker([42.338998, -83.04852], {icon: myIcon11}).bindPopup(tigersPopup, customOptions).addTo(stadiums);
+var marlins = L.marker([25.778318, -80.219597], {icon: myIcon12}).bindPopup(marlinsPopup, customOptions).addTo(stadiums);
+var astros = L.marker([29.757697, -95.354538], {icon: myIcon13}).bindPopup(astrosPopup, customOptions).addTo(stadiums);
+var royals = L.marker([39.051672, -94.480314], {icon: myIcon14}).bindPopup(royalsPopup, customOptions).addTo(stadiums);
+var dodgers = L.marker([34.073851, -118.239958], {icon: myIcon15}).bindPopup(dodgersPopup, customOptions).addTo(stadiums);
+var brewers = L.marker([43.027978, -87.97115], {icon: myIcon16}).bindPopup(brewersPopup, customOptions).addTo(stadiums);
+var twins = L.marker([44.981712, -93.27776], {icon: myIcon17}).bindPopup(twinsPopup, customOptions).addTo(stadiums);
+var nationals = L.marker([38.87301, -77.007433], {icon: myIcon18}).bindPopup(nationalsPopup, customOptions).addTo(stadiums);
+var mets = L.marker([40.757088, -73.845821], {icon: myIcon19}).bindPopup(metsPopup, customOptions).addTo(stadiums);
+var yankees = L.marker([40.829643, -73.926175], {icon: myIcon20}).bindPopup(yankeesPopup, customOptions).addTo(stadiums);
+var as = L.marker([37.752483, -122.19821], {icon: myIcon21}).bindPopup(asPopup, customOptions).addTo(stadiums);
+var phillies = L.marker([39.906057, -75.166495], {icon: myIcon22}).bindPopup(philliesPopup, customOptions).addTo(stadiums);
+var pirates = L.marker([40.446855, -80.005666], {icon: myIcon23}).bindPopup(piratesPopup, customOptions).addTo(stadiums);
+var padres = L.marker([32.707656, -117.156904], {icon: myIcon24}).bindPopup(padresPopup, customOptions).addTo(stadiums);
+var giants = L.marker([37.778595, -122.38927], {icon: myIcon25}).bindPopup(giantsPopup, customOptions).addTo(stadiums);
+var mariners = L.marker([47.591391, -122.332327], {icon: myIcon26}).bindPopup(marinersPopup, customOptions).addTo(stadiums);
+var cardinals = L.marker([38.622619, -90.192821], {icon: myIcon27}).bindPopup(cardinalsPopup, customOptions).addTo(stadiums);
+var rays = L.marker([27.768225, -82.653392], {icon: myIcon28}).bindPopup(raysPopup, customOptions).addTo(stadiums);
+var rangers = L.marker([32.75128, -97.082504], {icon: myIcon29}).bindPopup(rangersPopup, customOptions).addTo(stadiums);
+var bluejays = L.marker([43.641438, -79.389353], {icon: myIcon30}).bindPopup(bluejaysPopup, customOptions).addTo(stadiums);
 
 var al = L.layerGroup();
-var angels = L.marker([33.800308, -117.882732]).bindPopup(angelsPopup, customOptions).addTo(al);
-var orioles = L.marker([39.284052, -76.621512]).bindPopup(oriolesPopup, customOptions).addTo(al);
-var redsox = L.marker([42.346676, -71.097218]).bindPopup(redsoxPopup, customOptions).addTo(al);
-var whitesox = L.marker([41.8299023, -87.633752]).bindPopup(whitesoxPopup, customOptions).addTo(al);
-var guardians = L.marker([41.496211, -81.685229]).bindPopup(guardiansPopup, customOptions).addTo(al);
-var tigers = L.marker([42.338998, -83.04852]).bindPopup(tigersPopup, customOptions).addTo(al);
-var astros = L.marker([29.757697, -95.354538]).bindPopup(astrosPopup, customOptions).addTo(al);
-var royals = L.marker([39.051672, -94.480314]).bindPopup(royalsPopup, customOptions).addTo(al);
-var twins = L.marker([44.981712, -93.27776]).bindPopup(twinsPopup, customOptions).addTo(al);
-var yankees = L.marker([40.829643, -73.926175]).bindPopup(yankeesPopup, customOptions).addTo(al);
-var as = L.marker([37.752483, -122.19821]).bindPopup(asPopup, customOptions).addTo(al);
-var mariners = L.marker([47.591391, -122.332327]).bindPopup(marinersPopup, customOptions).addTo(al);
-var rays = L.marker([27.768225, -82.653392]).bindPopup(raysPopup, customOptions).addTo(al);
-var rangers = L.marker([32.75128, -97.082504]).bindPopup(rangersPopup, customOptions).addTo(al);
-var bluejays = L.marker([43.641438, -79.389353]).bindPopup(bluejaysPopup, customOptions).addTo(al);
+var angels = L.marker([33.800308, -117.882732], {icon: myIcon1}).bindPopup(angelsPopup, customOptions).addTo(al);
+var orioles = L.marker([39.284052, -76.621512], {icon: myIcon4}).bindPopup(oriolesPopup, customOptions).addTo(al);
+var redsox = L.marker([42.346676, -71.097218], {icon: myIcon5}).bindPopup(redsoxPopup, customOptions).addTo(al);
+var whitesox = L.marker([41.8299023, -87.633752], {icon: myIcon7}).bindPopup(whitesoxPopup, customOptions).addTo(al);
+var guardians = L.marker([41.496211, -81.685229], {icon: myIcon9}).bindPopup(guardiansPopup, customOptions).addTo(al);
+var tigers = L.marker([42.338998, -83.04852], {icon: myIcon11}).bindPopup(tigersPopup, customOptions).addTo(al);
+var astros = L.marker([29.757697, -95.354538], {icon: myIcon13}).bindPopup(astrosPopup, customOptions).addTo(al);
+var royals = L.marker([39.051672, -94.480314], {icon: myIcon14}).bindPopup(royalsPopup, customOptions).addTo(al);
+var twins = L.marker([44.981712, -93.27776], {icon: myIcon17}).bindPopup(twinsPopup, customOptions).addTo(al);
+var yankees = L.marker([40.829643, -73.926175], {icon: myIcon20}).bindPopup(yankeesPopup, customOptions).addTo(al);
+var as = L.marker([37.752483, -122.19821], {icon: myIcon21}).bindPopup(asPopup, customOptions).addTo(al);
+var mariners = L.marker([47.591391, -122.332327], {icon: myIcon26}).bindPopup(marinersPopup, customOptions).addTo(al);
+var rays = L.marker([27.768225, -82.653392], {icon: myIcon28}).bindPopup(raysPopup, customOptions).addTo(al);
+var rangers = L.marker([32.75128, -97.082504], {icon: myIcon29}).bindPopup(rangersPopup, customOptions).addTo(al);
+var bluejays = L.marker([43.641438, -79.389353], {icon: myIcon30}).bindPopup(bluejaysPopup, customOptions).addTo(al);
 
 var nl = L.layerGroup();
-var dbacks = L.marker([33.445526, -112.066664]).bindPopup(dbacksPopup, customOptions).addTo(nl);
-var braves = L.marker([33.8907, -84.467684]).bindPopup(bravesPopup, customOptions).addTo(nl);
-var cubs = L.marker([41.948438, -87.655333]).bindPopup(cubsPopup, customOptions).addTo(nl);
-var reds = L.marker([39.097931, -84.508151]).bindPopup(redsPopup, customOptions).addTo(nl);
-var rockies = L.marker([39.755882, -104.994178]).bindPopup(rockiesPopup, customOptions).addTo(nl);
-var marlins = L.marker([25.778318, -80.219597]).bindPopup(marlinsPopup, customOptions).addTo(nl);
-var dodgers = L.marker([34.073851, -118.239958]).bindPopup(dodgersPopup, customOptions).addTo(nl);
-var brewers = L.marker([43.027978, -87.97115]).bindPopup(brewersPopup, customOptions).addTo(nl);
-var nationals = L.marker([38.87301, -77.007433]).bindPopup(nationalsPopup, customOptions).addTo(nl);
-var mets = L.marker([40.757088, -73.845821]).bindPopup(metsPopup, customOptions).addTo(nl);
-var phillies = L.marker([39.906057, -75.166495]).bindPopup(philliesPopup, customOptions).addTo(nl);
-var pirates = L.marker([40.446855, -80.005666]).bindPopup(piratesPopup, customOptions).addTo(nl);
-var padres = L.marker([32.707656, -117.156904]).bindPopup(padresPopup, customOptions).addTo(nl);
-var giants = L.marker([37.778595, -122.38927]).bindPopup(giantsPopup, customOptions).addTo(nl);
-var cardinals = L.marker([38.622619, -90.192821]).bindPopup(cardinalsPopup, customOptions).addTo(nl);
+var dbacks = L.marker([33.445526, -112.066664], {icon: myIcon2}).bindPopup(dbacksPopup, customOptions).addTo(nl);
+var braves = L.marker([33.8907, -84.467684], {icon: myIcon3}).bindPopup(bravesPopup, customOptions).addTo(nl);
+var cubs = L.marker([41.948438, -87.655333], {icon: myIcon6}).bindPopup(cubsPopup, customOptions).addTo(nl);
+var reds = L.marker([39.097931, -84.508151], {icon: myIcon8}).bindPopup(redsPopup, customOptions).addTo(nl);
+var rockies = L.marker([39.755882, -104.994178], {icon: myIcon10}).bindPopup(rockiesPopup, customOptions).addTo(nl);
+var marlins = L.marker([25.778318, -80.219597], {icon: myIcon12}).bindPopup(marlinsPopup, customOptions).addTo(nl);
+var dodgers = L.marker([34.073851, -118.239958], {icon: myIcon15}).bindPopup(dodgersPopup, customOptions).addTo(nl);
+var brewers = L.marker([43.027978, -87.97115], {icon: myIcon16}).bindPopup(brewersPopup, customOptions).addTo(nl);
+var nationals = L.marker([38.87301, -77.007433], {icon: myIcon18}).bindPopup(nationalsPopup, customOptions).addTo(nl);
+var mets = L.marker([40.757088, -73.845821], {icon: myIcon19}).bindPopup(metsPopup, customOptions).addTo(nl);
+var phillies = L.marker([39.906057, -75.166495], {icon: myIcon22}).bindPopup(philliesPopup, customOptions).addTo(nl);
+var pirates = L.marker([40.446855, -80.005666], {icon: myIcon23}).bindPopup(piratesPopup, customOptions).addTo(nl);
+var padres = L.marker([32.707656, -117.156904], {icon: myIcon24}).bindPopup(padresPopup, customOptions).addTo(nl);
+var giants = L.marker([37.778595, -122.38927], {icon: myIcon25}).bindPopup(giantsPopup, customOptions).addTo(nl);
+var cardinals = L.marker([38.622619, -90.192821], {icon: myIcon27}).bindPopup(cardinalsPopup, customOptions).addTo(nl);
 
+function getRadius(area) {
+  var radius = Math.sqrt(area/Math.PI);
+  return radius * 5;
+}
+
+var propcircles = new L.geoJson(championships, {
+    onEachFeature: function(feature, featureLayer){
+        featureLayer.bindPopup('<p>Team: <b>'+feature.properties.Team+ '</b></br>' +
+			       'Championships: '+feature.properties.Championships+'</p>');
+    },
+    pointToLayer: function(feature, latlng) {
+      return L.circleMarker(latlng, {
+          fillColor: "#920101", 
+          color: '#920101',
+          weight: 2,       
+          radius: getRadius(feature.properties.Championships),
+          fillOpacity: .35
+      }).on({
+            mouseover: function(e) {
+                this.openPopup();
+                this.setStyle({fillOpacity: .8, fillColor: '#2D8F4E'});
+
+            },
+            mouseout: function(e) {
+                this.closePopup();
+                this.setStyle({fillOpacity: .35, fillColor: '#920101'});  
+            }
+    });
+  }
+});
 
 //Set up the baselayers and WMS layer
 var streets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ2NoYXVkaHVyaSIsImEiOiJjazBtcG5odG8wMDltM2JtcjdnYTgyanBnIn0.qwqjMomdrBMG36GQKXBlMw', {
@@ -181,7 +361,6 @@ var mymap = L.map("map", {
     layers: [streets, stadiums]});
 
 var line = L.polyline(coords, {color: "black", weight: 4});
-line.addTo(mymap);
 
 // Create menu items
 var baseLayers = {
@@ -189,7 +368,7 @@ var baseLayers = {
     'Grayscale': grayscale,
     };
 
-var overlays = {'Stadiums': stadiums, 'American League': al, 'National League': nl, 'Rich Hill Career Path': line};
+var overlays = {'Stadiums': stadiums, 'American League': al, 'National League': nl, 'Rich Hill Career Path': line, 'Championships': propcircles};
 
 //Create the menu
  var layerControl = L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(mymap); //collapsed: true is defaults
